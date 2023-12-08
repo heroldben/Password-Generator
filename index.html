@@ -1,0 +1,21 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate four <br/><span class="second-title">random passwords</span></h1>
+            <p>Never use an inactive password again.</p>
+            <p>Length: <span id="length-el"></span></p>
+            <input type="range" min="11" max="16" value="11" class="slider" id="slider-el">
+            <button onclick="generatePassword()">Generate passwords 🔑</button>
+            <div class="inputs">
+                <div class="pw-box" id="input1-el"></div>
+                <div class="pw-box" id="input2-el"></div>
+                <div class="pw-box" id="input3-el"></div>
+                <div class="pw-box" id="input4-el"></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
